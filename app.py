@@ -1,6 +1,7 @@
 import streamlit as st
 from home import run_home
 from eda import run_eda
+from ML import run_ml
 
 def main():
     st.title('자동차 가격 예측 앱')
@@ -13,7 +14,7 @@ def main():
     elif choice ==menu[1]:
         run_eda()
     elif choice == menu[2]:
-        pass
+        run_ml()
 
 
 if __name__=='__main__':
