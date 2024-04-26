@@ -48,7 +48,7 @@ def run_ml():
         y_pred=y_pred[0]
         y_pred=round(y_pred)
         y_pred=format(y_pred,',')
-        st.text(f'자동차 구매 가능 금액은${y_pred}달러 입니다.')
+        st.text(f'자동차 구매 가능 금액은 ${y_pred}달러 입니다.')
 
 
 
