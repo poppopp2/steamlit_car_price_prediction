@@ -24,5 +24,6 @@ jobs:
             cd anaconda3/
             source bin/activate
             cd ..
+            cd Github
             cd steamlit_car_price_prediction                      
             git pull
