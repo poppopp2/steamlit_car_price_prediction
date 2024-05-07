@@ -22,6 +22,7 @@ jobs:
           username: ${{ secrets.USER }}
           script:
             cd anaconda3/
+            source bin/activate
             conda activate st_310
             cd ..
             cd Github
