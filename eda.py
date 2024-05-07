@@ -42,6 +42,12 @@ def run_eda():
 
 
     if len(selected_columns) >= 2:
+
+        #.상관계수 보여준다.
+        st.dataframe(df[selected_columns].corr())
+
+
+        
         #1. 페어플롯을 그린다.
         #tobo : 1. pairplot 을 다른 라이브러리 이용해서 하는 방법
         # pairplot 말고, 반복문으로 두 컬럼씩 관계를 차트로 그리는 방법
@@ -51,8 +57,6 @@ def run_eda():
 
     
 
-        #.상관계수 보여준다.
-        st.dataframe(df[selected_columns].corr())
 
         combinations_list = list(combinations(selected_columns, 2))
         for pair in combinations_list:
