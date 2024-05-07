@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.USER }}
           script:
             cd anaconda3/
-            conda activate <st_310>
+            conda activate st_310
             cd ..
             cd Github
             cd steamlit_car_price_prediction
