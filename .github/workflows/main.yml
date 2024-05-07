@@ -21,4 +21,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script:
-            source $HOME/anaconda3/bin/activate && conda activate st_310 && cd $HOME/Github/steamlit_car_price_prediction && git pull
+            cd $HOME/anaconda3/; source bin/activate; conda activate st_310; cd $HOME/Github/steamlit_car_price_prediction; git pull
+
