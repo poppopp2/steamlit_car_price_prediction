@@ -4,7 +4,7 @@ from eda import run_eda
 from ML import run_ml
 
 def main():
-    st.title('자동차 가격 예측 앱!')
+    st.title(' 자동차 가격 예측 앱! ')
 
     menu=['Home', 'EDA', 'ML']
     choice=st.sidebar.selectbox('메뉴',menu)
